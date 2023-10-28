@@ -1,0 +1,95 @@
+.dino_list_cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+}
+.dino_list_cart_1_1 {
+  display: flex;
+  border: 3px solid white;
+  max-width: 30em;
+  height: 15em;
+  border-radius: 5px;
+  color: white;
+  box-shadow: 7px 7px 7px black;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+@media (min-width: 601px) {
+  .dino_list_cart_1_1:hover {
+    transform: translateX(-30px);
+  }
+}
+
+.dino_list_cart_1_1_2 {
+  height: 100%;
+}
+.dino_list_cart_1_1_1 {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  min-width: 15em;
+  backdrop-filter: blur(3px);
+}
+
+.bill_info {
+  text-align: center;
+  margin-top: -1em;
+  margin-bottom: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bill_info_1 {
+  background-color: #1c1c1c;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1em 2em;
+  border-radius: 10px;
+}
+.bill_info_1_1 {
+  color: white;
+}
+.bill_info_1_2 {
+  display: flex;
+}
+.bill_info_1_2_1 {
+  background-color: lawngreen;
+  padding: 0.5em 1em;
+  margin: 1em;
+  width: 9em;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.bill_info_1_2_1:active {
+  transform: scale(0.9);
+}
+.bill_info_1_2_2 {
+  background-color: red;
+  padding: 0.5em 1em;
+  margin: 1em;
+  width: 9em;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.bill_info_1_2_2:active {
+  transform: scale(0.9);
+}
+@media (max-width: 600px) {
+  .dino_list_cart_1_1 {
+    transform: scale(0.7);
+    margin-bottom: -5em;
+  }
+  .dino_list_cart_1_1:hover {
+    transform: scale(0.7) translateX(-30px);
+  }
+  .dino_list_cart {
+    margin-top: -3em;
+    margin-bottom: 3em;
+  }
+  .bill_info_1 {
+    transform: scale(0.7);
+  }
+}

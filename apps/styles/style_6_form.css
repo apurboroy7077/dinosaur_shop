@@ -1,0 +1,45 @@
+.form_div {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.form {
+  background-color: #1c1c1c;
+  padding: 2em;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: fit-content;
+}
+.username_div_1,
+.email_div_1 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+.username_input,
+.email_input {
+  font-size: 1.3em;
+  padding: 10px;
+  border-radius: 5px;
+  outline: transparent;
+  width: 17em;
+}
+.place_order_button {
+  display: block;
+  margin: 0 auto;
+  padding: 0.5em 2em;
+  font-size: 1em;
+  background-color: lawngreen;
+  outline: transparent;
+  border: transparent;
+}
+.place_order_button:active {
+  transform: scale(0.9);
+}
+@media (max-width: 600px) {
+  .form {
+    transform: scale(0.7);
+  }
+}

@@ -1,0 +1,17 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: arial;
+}
+.container {
+  max-width: 100%;
+  overflow: hidden;
+}
+main {
+  min-height: 70vh;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
