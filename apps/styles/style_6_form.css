@@ -38,6 +38,11 @@
 .place_order_button:active {
   transform: scale(0.9);
 }
+.order_info {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+}
 @media (max-width: 600px) {
   .form {
     transform: scale(0.7);

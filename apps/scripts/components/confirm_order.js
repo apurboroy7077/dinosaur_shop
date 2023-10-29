@@ -16,6 +16,12 @@ let confirm_order_function = () => {
         <input placeholder="Email" name="Email" type="email" required class="email_input" />
       </div>
     </div>
+    <div class="order_info">
+      <div class="order_info_1">order_info</div>
+      <div class="order_info_2">
+        <input placeholder="order" name="Message" type="text" class="order_input" />
+      </div>
+    </div>
     <div class="submit_div">
       <button type="submit" class="place_order_button">
         Place Order
@@ -24,7 +30,9 @@ let confirm_order_function = () => {
     <div id="msg"></div>
   </form>
 </div>`;
-
+  let bag = localStorage.getItem("dino_data");
+  let order_info = document.getElementsByClassName("order_input")[0];
+  order_info.value = bag;
   const scriptURL =
     "https://script.google.com/macros/s/AKfycbzDklBWeSE3PruliXpjdQhx75LGgTUkjjEFyI_gM4dDIWQLRP_JH819uzCNC59EOHni/exec";
   const form = document.forms["submit-to-google-sheet"];
