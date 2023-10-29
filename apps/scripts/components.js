@@ -271,7 +271,7 @@ let update_shown_info_cart = () => {
   bagpack_quantity.innerHTML = total_quantity;
   let cart_total_amount =
     document.getElementsByClassName("cart_total_amount")[0];
-  cart_total_amount.innerHTML = total_amount();
+  cart_total_amount.innerHTML = `Total Amount: ${total_amount()}$`;
 };
 let homepage = () => {
   let bag = localStorage.getItem("dino_data");
